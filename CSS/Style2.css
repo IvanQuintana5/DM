@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Img/DDM.webp");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #8400ff;
+    color: #fff;
+    display: flex;
+    align-content: center;
+    padding: 15px 5%;
+    font-family: Mexicana;
+}
+
+.logo h1 {
+    font-size: 34px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.galeria{
+    margin: 20px;
+    text-align: center;
+    display: flex;
+    width: 400px;
+    height: 300px;
+}
+.galeria img{
+    width: 90px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+.galeria img:hover{
+    width: 450px;
+    opacity: 1;
+    filter: brightness(90%);
+}
+
+/* Cartelera de cine */
+.cartelera {
+    margin: 20px 5%;
+}
+
+.Tlo h2 {
+    text-align: center;
+    font-size: 74px;
+    margin-top: 20px;
+    font-family: Mexican fiesta;
+    color: rgb(255, 0, 170);
+}
+
+[alt="Img"] {
+    place-items: center;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 15px 10px 12px black;
+}
+
+/* Estilos para el contenedor que alinea la imagen y el cuadro de texto horizontalmente */
+.image-container {
+    display: flex;
+    align-items: center;
+  }
+
+  /* Estilos para la imagen */
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Estilos para el cuadro de texto (inicialmente oculto) */
+  .text-box {
+    background-color: rgba(45, 2, 201, 0.658);
+    color: #fff;
+    padding: 10px;
+    display: none;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+
+  /* Estilos para mostrar el cuadro de texto al pasar el mouse por encima */
+  .image-container:hover .text-box {
+    display: block;
+  }
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+.image-cell {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+}
+
+.image-cell img {
+    width: 100%;
+    height: auto;
+}
